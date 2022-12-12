@@ -44,7 +44,7 @@ app.use("/api/v1/category", categoryRoutes);
 
 // Mongo DB Database Connection 🔂
 mongoose.set("strictQuery", true);
-mongoose.connect(process.env.DATABASE_URI, () => {
+mongoose.connect("mongodb+srv://salmanazmirafi:salmanazmirafi@cluster0.exejumv.mongodb.net/data-store?retryWrites=true&w=majority", () => {
   console.log("Database Connection 🔂 Success");
 });
 
