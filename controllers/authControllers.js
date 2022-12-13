@@ -28,7 +28,7 @@ export const loginAuth = async (req, res) => {
     const camper = await bcrypt.compare(req.body.password, user.password);
     !camper && res.status(400).json("Wrong User or Password");
 
-    const { password,email, ...others } = user._doc;
+    const { password, ...others } = user._doc;
     res.status(200).json(others);
   } catch (error) {
     res.status(500).json(error);
