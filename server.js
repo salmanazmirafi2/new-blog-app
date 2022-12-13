@@ -50,6 +50,7 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', true);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
+
 mongoose.connect("mongodb+srv://salmanazmirafi:salmanazmirafi@cluster0.exejumv.mongodb.net/data-store?retryWrites=true&w=majority", () => {
   console.log("Database Connection 🔂 Success");
 });
